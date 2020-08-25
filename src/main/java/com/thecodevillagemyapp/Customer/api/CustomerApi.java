@@ -33,7 +33,8 @@ public class CustomerApi {
         List<Customer> customers=new ArrayList<>();
         customers.add(customer);
         customers.add(customer1);
-        customers.add(customer2);        System.out.println("Total Customers # "+customers.size());
+        customers.add(customer2);
+        System.out.println("Total Customers # "+customers.size());
         return new ResponseEntity<>(customers, HttpStatus.OK);
     }
     @RequestMapping(value = "/all/db/manual",method = RequestMethod.GET)
